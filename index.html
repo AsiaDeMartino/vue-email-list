@@ -14,7 +14,7 @@
     
     <div id="container">
         <ul>
-            <li v-for="(element,i) in mail">{{i + 1}}. {{element}}</li>
+            <li v-if="mail.length >= 10" v-for="(element,i) in mail">{{i + 1}}. {{element}}</li>
         </ul>
     </div>
 
